@@ -14,7 +14,7 @@ public class Playlist {
         for(int i = 0; i < 3; i++){
             System.out.println(favoriteSongs[i]);
         }
-
+        System.out.println("________________________________________ \n");
         // creates new String ArrayList
         ArrayList<String> desertIslandPlaylist = new ArrayList<>();
 
@@ -26,10 +26,21 @@ public class Playlist {
         desertIslandPlaylist.add("The Marias - Carino");
 
         System.out.println(desertIslandPlaylist);
+        System.out.println("________________________________________ \n");
 
         // convert array to a list (to transfer to ArrayList)
         // Add list (favoriteSongs) to ArrayList using addAll() method
         desertIslandPlaylist.addAll(Arrays.asList(favoriteSongs));
+
+        System.out.println(desertIslandPlaylist);
+        System.out.println("There are "+ desertIslandPlaylist.size() + " songs in the Desert Island Playlist.");
+        System.out.println("________________________________________ \n");
+
+
+        // removes 10 songs from ArrayList
+        for(int i = desertIslandPlaylist.size() - 1; i >=5; i--) {
+            desertIslandPlaylist.remove(i);
+        }
 
         System.out.println(desertIslandPlaylist);
 
