@@ -37,12 +37,24 @@ public class Playlist {
         System.out.println("________________________________________ \n");
 
 
-        // removes 10 songs from ArrayList
+        // for loop removes 10 songs from ArrayList
         for(int i = desertIslandPlaylist.size() - 1; i >=5; i--) {
             desertIslandPlaylist.remove(i);
         }
 
         System.out.println(desertIslandPlaylist);
+        System.out.println("________________________________________ \n");
+
+        // indices of two songs using indexOf() method
+        int songA = desertIslandPlaylist.indexOf("The Cranberries - Linger");
+        int songB = desertIslandPlaylist.indexOf("The Marias - No One Noticed");
+
+        String tempA = "Song A";
+
+        //replace song A with song B using set() method. Song B will show up twice
+        desertIslandPlaylist.set(songA, "The Marias - No One Noticed");
+        System.out.println(desertIslandPlaylist);
+
 
     }
 }
