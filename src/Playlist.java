@@ -49,10 +49,17 @@ public class Playlist {
         int songA = desertIslandPlaylist.indexOf("The Cranberries - Linger");
         int songB = desertIslandPlaylist.indexOf("The Marias - No One Noticed");
 
-        String tempA = "Song A";
+        //temporary hold for song a
+        String tempA = "The Cranberries - Linger";
 
         //replace song A with song B using set() method. Song B will show up twice
         desertIslandPlaylist.set(songA, "The Marias - No One Noticed");
+        System.out.println(desertIslandPlaylist);
+
+        System.out.println("________________________________________ \n");
+
+        // with this, Song A is now where Song B use to be because the variable tempA has the value of Song A stored
+        desertIslandPlaylist.set(songB, tempA);
         System.out.println(desertIslandPlaylist);
 
 
